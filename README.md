@@ -31,3 +31,5 @@ Note: Run below commands from the directory where `docker-compose.yml` file is p
     * Runs Spark Worker service
     * There could be multiple instances of this container. To connect to n'th container
       * `docker exec -it sparkdockercluster_spark-slave__n_ /bin/bash`
+
+# update spark to 2.3.0 ，hadoop to 2.9.0
