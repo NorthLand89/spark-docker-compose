@@ -6,7 +6,7 @@ service ssh restart
 # Setup password less ssh
 sshpass -p screencast ssh-copy-id root@localhost
 
-sed -i "s#localhost#$NAMENODE_HOSTNAME#g" /opt/hadoop-2.6.0/etc/hadoop/core-site.xml
+sed -i "s#localhost#$NAMENODE_HOSTNAME#g" /opt/hadoop/etc/hadoop/core-site.xml
 
 # Start spark master and worker services
 start-master.sh

@@ -7,7 +7,7 @@ service ssh restart
 sshpass -p screencast ssh-copy-id root@localhost
 
 export HOSTNAME=`hostname`
-sed -i "s#localhost#$HOSTNAME#g" /opt/hadoop-2.6.0/etc/hadoop/core-site.xml
+sed -i "s#localhost#$HOSTNAME#g" /opt/hadoop/etc/hadoop/core-site.xml
 
 # Format the NameNode data directory
 hdfs namenode -format -force
